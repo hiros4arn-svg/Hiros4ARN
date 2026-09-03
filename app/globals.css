@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+:root {
+  /* Hiros4ARN palette – matching Google Site */
+  --background: #070e1c;
+  --background-secondary: #0b1628;
+  --foreground: #f5f7fa;
+  --card: #0f1c33;
+  --card-hover: #152640;
+  --border: #1e2f4d;
+  --muted: #94a3b8;
+  --accent: #d4af37;
+  --accent-bright: #f5c518;
+  --accent-soft: #c9a227;
+  --primary: #ffffff;
+  --text-gold: #e8d48b;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-background-secondary: var(--background-secondary);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-hover: var(--card-hover);
+  --color-border: var(--border);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-accent-bright: var(--accent-bright);
+  --color-accent-soft: var(--accent-soft);
+  --color-primary: var(--primary);
+  --color-text-gold: var(--text-gold);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #070e1c;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e2f4d;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #d4af37;
+}
+
+.glow-gold {
+  text-shadow: 0 0 20px rgba(212, 175, 55, 0.35);
+}
